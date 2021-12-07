@@ -1,0 +1,288 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+ 
+}
+
+
+
+/* ----------------------------
+  ------- Custom styles -----
+----------------------------- */
+
+* {
+  font-family: 'Roboto', sans-serif; 
+  
+}
+
+.bg-purple1 {
+    background-color: #1D3557;
+}
+
+.container-xl img {
+    width: 150px;
+}
+
+.btn-primary {
+    background-color: #457B9D;
+    border-color: #457B9D;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.navbar-dark .navbar-nav .nav-link.active {
+    background-color: white;
+    color: #1D3557;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: #1D3557;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link.btn-primary:hover {
+    color: #1D3557;
+}
+
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #1D3557;
+}
+
+.container h1 {
+    color: #FC6471;
+}
+
+.container p {
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #FC6471;
+    border-color: #FC6471;
+    color: #1D3557;
+}
+
+.btn-outline-danger {
+    border-color: #FC6471;
+    color: #FC6471;
+}
+
+.btn-outline-danger:hover,
+.btn-secondary:hover {
+background-color: #fc6471ad
+}
+
+.container-xl h1 {
+  color: #FC6471;
+}
+
+.display-3 {
+  color: #FC6471;
+}
+
+footer p {
+  color: white;
+}
+
+footer {
+  background-color: #1D3557;
+}
+
+/* custom styles for portfolio page */
+
+.banner h1 {
+  color: #FC6471;
+}
+
+.line {
+  background-color: #457B9D;
+  margin-left: -100px;
+  margin-right: -100px;
+}
+
+.portfolio .container h1 {
+  color: #1D3557;
+}
+
+.btn-link {
+  color: #FC6471;
+}
+
+
+
+/* ----------------------------
+  ------- Mobile -----
+----------------------------- */
+
+.btns1 {
+    margin-left: 25%;
+}
+
+.isabel img {
+    width: 50%;
+    margin-left: 7rem;
+    
+
+}
+
+main {
+  background-color: #1D3557;
+}
+
+.py-5 {
+  padding-bottom: 0;
+}
+
+.mimido img {
+  width: 50%;
+}
+
+/* ----------------------------
+  ------- Desktop -----
+----------------------------- */
+
+@media only screen and (min-width: 768px) {
+
+  .container h1 {
+    color: red;
+}
+
+
+
+}

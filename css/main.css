@@ -348,7 +348,7 @@ main {
 }
 
 /* added skip link, position and top are so they are not showed in the page */
-
+ 
 .skip-links a{
   position: absolute;
   top: -3em;

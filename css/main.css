@@ -216,6 +216,10 @@ background-color: #fc6471ad
   color: #FC6471;
 }
 
+.display-5 {
+  color: #FC6471;
+}
+
 footer p {
   color: white;
 }
@@ -224,7 +228,17 @@ footer {
   background-color: #1D3557;
 }
 
-/* custom styles for portfolio page */
+
+/* custom styles for portfolio and resume page */
+
+.container-2 img {
+  width: 250px;
+
+}
+
+.container-3 img {
+  width: 250px;
+}
 
 .banner h1 {
   color: #FC6471;
@@ -244,6 +258,54 @@ footer {
   color: #FC6471;
 }
 
+.one img {
+  width: 300px;
+}
+
+.two img {
+  width: 300px;
+}
+
+.three img {
+  width: 200px;
+}
+
+.ux img {
+  width: 400px;
+}
+
+.experience img {
+  width: 300px;
+  padding-left: 3rem;
+}
+
+
+
+/* custom styles for contact page */
+
+
+
+.glasses img {
+  width: 300px;
+  margin-left: 25%;
+}
+
+.ice-img {
+  margin-left: 5rem;
+}
+
+.ice-img img{
+  transition: all 0.3s;
+  display: block;
+  opacity: 0.5;
+  transform: scale(0.8);
+  width: 300px;
+}
+
+.ice-img img:hover {
+  transform: scale(1);
+  opacity: 1;
+}
 
 
 /* ----------------------------
@@ -251,14 +313,18 @@ footer {
 ----------------------------- */
 
 .btns1 {
-    margin-left: 25%;
+    
+}
+
+.flying img {
+    width: 300px
+    
+    
+
 }
 
 .isabel img {
-    width: 50%;
-    margin-left: 7rem;
-    
-
+  width: 100%;
 }
 
 main {
@@ -279,10 +345,48 @@ main {
 
 @media only screen and (min-width: 768px) {
 
-  .container h1 {
-    color: red;
+.isabel img {
+    margin-top: -4rem;
+}
+
+.mimido img {
+  width: 300px;
+
+}
+
+.experience img {
+  width: 300px;
+  padding-left: 0;
+}
+
+.ice-img {
+  margin-left: 0;
 }
 
 
 
 }
+
+@media only screen and (min-width: 991px) {
+
+  .isabel img {
+      width: 400px;
+  }
+  
+  .hello {
+   margin-top: 3rem;
+  }
+
+  .experience h3 {
+    margin-right: 10rem;
+  }
+
+ 
+
+  .resumetext {
+    margin-right: 15rem;
+  }
+
+
+  
+  }

@@ -16,7 +16,4 @@ Thanks to this project I am able to write and produce faster and efficiently. I 
 
 https://getbootstrap.com/
 https://fonts.google.com/
-
-**Adittional notes**
-
-The reason why the ''see more'' on the portfolio page doesn't work is because I don't have enough work I want to show yet. The button was added for future convenience. 
+ 

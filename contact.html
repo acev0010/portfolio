@@ -13,9 +13,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
   
   <title>Contact</title>
 </head>
+
+<script src="scroll-entrance.js"></script>
+
+<script src="PATH-TO-SCRIPT/scroll-entrance.js"></script>
+  <style>
+    /* Ensure elements are hidden while ScrollEntrance is loading */
+    [data-entrance] { visibility: hidden; }
+</style>
 
 <body>
   <header class="bg-purple1">
@@ -60,22 +72,55 @@
         <div class="container-lg">
           <h1 class="display-5 fw-bold py-5">Contact form</h1>
             <div class="row">
-                <div class="form input-group col-md pt-3 pb-3 rounded-3">
-                    <span class="input-group-text">First and last name</span>
-                    <input type="text" placeholder="First name" aria-label="First name" class="form-control">
-                    <input type="text" placeholder="Last name" aria-label="Last name" class="form-control">
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">E-mail</span>
-                        <input type="text" class="form-control" placeholder="Your E-mail" aria-label="Username" aria-describedby="basic-addon1">
-                      </div>
-                      <div class="input-group">
-                        <span class="input-group-text">Message</span>
-                        <textarea class="form-control pb-5" aria-label="With textarea"></textarea>
-                      </div>
-                      <a class="btn btn-primary rounded-pill pe-4 ps-4 fw-bold mt-3 " href="#">Submit </a>
+              <form id="contact-form" method="post" action="contact.php" role="form">
+
+                <div class="messages"></div>
+            
+                <div class="controls">
+            
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_name">Firstname *</label>
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
                       
-                  </div>
-                  <div class="glasses justify-content-center col-md">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_email" class="pt-3">Email *</label>
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="form_message" class="pt-3">Message *</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 pt-3">
+                            <input type="submit" class="btn btn-primary btn-send" value="Send message" class="pt-3">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-muted pt-3">
+                                <strong>*</strong> These fields are required. Contact form template by
+                                <a href="https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form" target="_blank">Bootstrapious</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            
+            </form>
+                  <div class="flying justify-content-center col-md" data-entrance="from-right">
                    <img src="./images/flying2.png" alt="meerkat flying">
                   
                   </div>
@@ -94,6 +139,12 @@
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+        <script src="contact.js"></script>
 
 </body>
 

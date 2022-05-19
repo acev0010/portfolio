@@ -13,12 +13,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+<script src="scroll-entrance.js"></script>
   
   <title>Portfolio</title>
 </head>
 
 <body>
+  <script src="PATH-TO-SCRIPT/scroll-entrance.js"></script>
   <header class="bg-purple1">
+    <style>
+      /* Ensure elements are hidden while ScrollEntrance is loading */
+      [data-entrance] { visibility: hidden; }
+</style>
     <div class="container">
       <ul class="skip-links">
         <li><a href="#banner">Skip to banner</a></li>
@@ -112,7 +118,7 @@
       <div class="container">
         <div class="row">
 
-        <div class="flying col-md ms-5">
+        <div class="flying col-md ms-5" data-entrance="from-left">
         <img src="./images/flying.png" alt="Meerkat flying">
 
       
@@ -125,7 +131,7 @@
           who is interested in learning more about me.</p>
           <div class="btns1 py-3 text-center">
           <a class="btn btn-secondary rounded-pill pe-4 ps-4 fw-bold mt-3 " href="resume.html">Go to Page </a>
-          <a class="btn btn-outline-danger rounded-pill pe-4 ps-4 fw-bold mt-3 " href="/images/resumepdf.pdf">Download PDF </a>
+          <a class="btn btn-outline-danger rounded-pill pe-4 ps-4 fw-bold mt-3 " href="./images/resumepdf.pdf">See the PDF </a>
         </div>
         </div>
       </div>
@@ -139,7 +145,7 @@
           </h3>
           <h3 class="display-5">-Dr Seuss</h3>
 
-          <div class="mimido mt-4">
+          <div class="mimido mt-4" data-entrance="fade">
           <img src="./images/mimido.png" alt="Meerkat sleeping">
         </div>
 

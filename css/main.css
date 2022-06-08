@@ -254,6 +254,10 @@ footer {
   color: #1D3557;
 }
 
+.portfolio img {
+  width: 300px;
+}
+
 .btn-link {
   color: #FC6471;
 }
@@ -271,7 +275,7 @@ footer {
 }
 
 .ux img {
-  width: 400px;
+  width: 300px;
 }
 
 .experience img {
